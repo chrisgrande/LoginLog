@@ -149,7 +149,7 @@
 				ORGANIZATIONNAME = "Göteborgs universitet";
 				TargetAttributes = {
 					666278B416E627480054E8EB = {
-						DevelopmentTeam = 5KQ3D3FG5H;
+						DevelopmentTeam = P5TZH6UL7E;
 					};
 				};
 			};
@@ -158,6 +158,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 666278AC16E627480054E8EB;
@@ -290,8 +291,9 @@
 		666278D616E627490054E8EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = P5TZH6UL7E;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LoginLog/LoginLog-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -313,8 +315,9 @@
 		666278D716E627490054E8EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = P5TZH6UL7E;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LoginLog/LoginLog-Prefix.pch";
 				HEADER_SEARCH_PATHS = (

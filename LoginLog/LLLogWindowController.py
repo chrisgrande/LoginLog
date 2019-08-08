@@ -118,6 +118,7 @@ class LLLogWindowController(NSObject):
     logFileData = LLLogViewDataSource.alloc().init()
     fileHandle = None
     updateTimer = None
+    logPathLabel = IBOutlet()
     
     def showLogWindow_(self, title):
         self.logView.setDelegate_(self.logFileData)
@@ -127,6 +128,7 @@ class LLLogWindowController(NSObject):
         
         # Open a log window that covers most of the screen.
         self.window.setTitle_(title)
+        self.logPathLabel.setStringValue_(title)
         self.window.setCanBecomeVisibleWithoutLogin_(True)
         self.window.setLevel_(NSScreenSaverWindowLevel - 1)
         self.window.orderFrontRegardless()
@@ -135,9 +137,9 @@ class LLLogWindowController(NSObject):
         # loginwindow message.
         windowRect = screenRect.copy()
         windowRect.origin.x = 100.0
-        windowRect.origin.y = 200.0
+        windowRect.origin.y = 100.0
         windowRect.size.width -= 200.0
-        windowRect.size.height -= 300.0
+        windowRect.size.height -= 200.0
         NSAnimationContext.beginGrouping()
         NSAnimationContext.currentContext().setDuration_(0.1)
         self.window.animator().setFrame_display_(windowRect, True)
