@@ -130,7 +130,7 @@ class LLLogWindowController(NSObject):
         self.window.setTitle_(title)
         self.logPathLabel.setStringValue_(title)
         self.window.setCanBecomeVisibleWithoutLogin_(True)
-        self.window.setLevel_(NSScreenSaverWindowLevel - 1)
+        self.window.setLevel_(NSScreenSaverWindowLevel - 5)
         self.window.orderFrontRegardless()
         # Resize the log window so that it leaves a border on all sides.
         # Add a little extra border at the bottom so we don't cover the
